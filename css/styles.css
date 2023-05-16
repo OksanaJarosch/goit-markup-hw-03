@@ -46,7 +46,19 @@ img {
   display: block;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid tomato;
+}
 /* Header */
+
+.header {
+  padding: 24px 0;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -99,12 +111,18 @@ img {
 
 /* Hero */
 
+.hero {
+  padding: 188px 0;
+}
+
 .hero-title {
   text-align: center;
   letter-spacing: 0.02em;
   font-size: 56px;
   line-height: 1.07;
   color: var(--white-color);
+
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -132,6 +150,10 @@ img {
 
 /* Section Advantages */
 
+.advant-section {
+  padding-top: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -150,10 +172,16 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: var(--title-color);
+
+  margin-bottom: 8px;
 }
 
 /* Section WhatAreWeDoing, 
 Section Team*/
+
+.what-doing-section {
+  padding: 120px 0;
+}
 
 .section-title {
   letter-spacing: 0.02em;
@@ -162,6 +190,8 @@ Section Team*/
   text-align: center;
   text-transform: capitalize;
   color: var(--title-color);
+
+  margin-bottom: 72px;
 }
 
 .team-undertitle {
@@ -171,6 +201,8 @@ Section Team*/
   line-height: 1.2;
   text-align: center;
   color: var(--title-color);
+
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -180,6 +212,7 @@ Section Team*/
 
 .team-section {
   background-color: var(--middle-background);
+  padding: 120px 0;
 }
 
 .team-card {
@@ -200,6 +233,12 @@ Section Team*/
 
 .footer {
   background-color: var(--dark-background);
+
+  padding: 100px 0;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
 }
 
 /*! Portfolio page */
