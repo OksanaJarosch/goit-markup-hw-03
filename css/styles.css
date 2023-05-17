@@ -56,8 +56,25 @@ img {
 }
 /* Header */
 
-.header {
-  padding: 24px 0;
+.navigation {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: block;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .logo {
@@ -77,7 +94,10 @@ img {
 .logo-white {
   color: var(--middle-background);
 }
+
 .nav-item {
+  padding: 24px 0;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -89,7 +109,6 @@ img {
 .nav-item.active {
   color: var(--button-hover);
 }
-
 .nav-item:hover,
 .nav-item:focus {
   color: var(--button-hover);
@@ -103,26 +122,38 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
 .contact:hover,
 .contact:focus {
   color: var(--button-hover);
+}
+
+.contact-list li:not(:last-child) {
+  margin-right: 40px;
+}
+.contact-list {
+  display: flex;
+}
+
+.contacts {
+  margin-left: auto;
 }
 
 /* Hero */
 
 .hero {
   padding: 188px 0;
+  text-align: center;
+
+  background-color: var(--dark-background);
 }
 
 .hero-title {
-  text-align: center;
+  margin-bottom: 48px;
+
   letter-spacing: 0.02em;
   font-size: 56px;
   line-height: 1.07;
   color: var(--white-color);
-
-  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -130,8 +161,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--accent-color);
@@ -139,13 +168,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-hover);
-}
-.hero {
-  background-color: var(--dark-background);
 }
 
 /* Section Advantages */
@@ -166,14 +191,15 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .advant-undertitle {
+  margin-bottom: 8px;
+
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--title-color);
-
-  margin-bottom: 8px;
 }
 
 /* Section WhatAreWeDoing, 
@@ -184,35 +210,35 @@ Section Team*/
 }
 
 .section-title {
+  margin-bottom: 72px;
+  text-align: center;
+
   letter-spacing: 0.02em;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
   color: var(--title-color);
-
-  margin-bottom: 72px;
 }
 
 .team-undertitle {
+  margin-bottom: 8px;
+  text-align: center;
+
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   color: var(--title-color);
-
-  margin-bottom: 8px;
 }
 
 .team-text {
   text-align: center;
+
   color: var(--text-color);
 }
 
 .team-section {
-  background-color: var(--middle-background);
   padding: 120px 0;
+  background-color: var(--middle-background);
 }
 
 .team-card {
@@ -232,9 +258,8 @@ Section Team*/
 }
 
 .footer {
-  background-color: var(--dark-background);
-
   padding: 100px 0;
+  background-color: var(--dark-background);
 }
 
 .logo-footer {
@@ -248,9 +273,9 @@ Section Team*/
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   letter-spacing: 0.04em;
   color: var(--accent-color);
   background: var(--middle-background);
