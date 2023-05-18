@@ -49,12 +49,15 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
+  width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid tomato;
 }
 /* Header */
+
+.header {
+  border-bottom: 1px solid var(--borders-color);
+}
 
 .navigation {
   display: flex;
@@ -63,6 +66,7 @@ img {
 .menu-list {
   display: flex;
   margin-left: 76px;
+  gap: 40px;
 }
 
 .header-container {
@@ -72,9 +76,6 @@ img {
 
 .nav-item {
   display: block;
-}
-.menu-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .logo {
@@ -127,11 +128,9 @@ img {
   color: var(--button-hover);
 }
 
-.contact-list li:not(:last-child) {
-  margin-right: 40px;
-}
 .contact-list {
   display: flex;
+  gap: 40px;
 }
 
 .contacts {
@@ -149,6 +148,9 @@ img {
 
 .hero-title {
   margin-bottom: 48px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 
   letter-spacing: 0.02em;
   font-size: 56px;
@@ -157,6 +159,8 @@ img {
 }
 
 .hero-button {
+  padding: 16px 32px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -177,6 +181,13 @@ img {
 
 .advant-section {
   padding-top: 120px;
+}
+.advant-list {
+  display: flex;
+  gap: 24px;
+}
+.advant-item {
+  width: 264px;
 }
 
 .visually-hidden {
@@ -208,6 +219,10 @@ Section Team*/
 .what-doing-section {
   padding: 120px 0;
 }
+.what-doing-list {
+  display: flex;
+  gap: 24px;
+}
 
 .section-title {
   margin-bottom: 72px;
@@ -232,6 +247,7 @@ Section Team*/
 
 .team-text {
   text-align: center;
+  margin-bottom: 32px;
 
   color: var(--text-color);
 }
@@ -242,18 +258,25 @@ Section Team*/
 }
 
 .team-card {
-  width: 264px;
-  height: 380px;
-
   background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-photo {
+  margin-bottom: 32px;
+}
 
 /* Footer */
 
 .footer-text {
+  width: 264px;
+
   color: var(--middle-background);
 }
 
@@ -269,13 +292,11 @@ Section Team*/
 /*! Portfolio page */
 
 .button {
+  padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
   letter-spacing: 0.04em;
   color: var(--accent-color);
   background: var(--middle-background);
@@ -299,12 +320,36 @@ Section Team*/
   background-color: var(--button-hover);
 }
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.buttons-list {
+  display: flex;
+  margin-bottom: 72px;
+  justify-content: center;
+  gap: 24px;
+}
+
 /* Projects */
 
 .project-title {
+  margin-bottom: 8px;
+
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--title-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.projects-container {
+  padding: 32px 0 32px 16px;
+  border: 1px solid var(--borders-color);
 }
