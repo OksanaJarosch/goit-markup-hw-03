@@ -61,6 +61,7 @@ img {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .menu-list {
@@ -74,11 +75,9 @@ img {
   align-items: center;
 }
 
-.nav-item {
-  display: block;
-}
-
 .logo {
+  margin-right: 76px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -98,7 +97,7 @@ img {
 
 .nav-item {
   padding: 24px 0;
-
+  display: block;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -148,7 +147,7 @@ img {
 
 .hero-title {
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -160,6 +159,12 @@ img {
 
 .hero-button {
   padding: 16px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 
   font-family: inherit;
   font-weight: 500;
@@ -181,6 +186,7 @@ img {
 
 .advant-section {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advant-list {
   display: flex;
@@ -217,7 +223,7 @@ img {
 Section Team*/
 
 .what-doing-section {
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 .what-doing-list {
   display: flex;
@@ -247,7 +253,6 @@ Section Team*/
 
 .team-text {
   text-align: center;
-  margin-bottom: 32px;
 
   color: var(--text-color);
 }
@@ -268,8 +273,8 @@ Section Team*/
   gap: 24px;
 }
 
-.team-photo {
-  margin-bottom: 32px;
+.team-member {
+  padding: 32px 16px;
 }
 
 /* Footer */
@@ -287,6 +292,7 @@ Section Team*/
 
 .logo-footer {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 /*! Portfolio page */
@@ -316,6 +322,8 @@ Section Team*/
 
 .button:hover,
 .button:focus {
+  border: 1px solid transparent;
+
   color: var(--white-color);
   background-color: var(--button-hover);
 }
@@ -350,6 +358,7 @@ Section Team*/
 }
 
 .projects-container {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
   border: 1px solid var(--borders-color);
+  border-top: none;
 }
